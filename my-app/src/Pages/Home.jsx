@@ -158,6 +158,9 @@ const styles = {
     },
     experince:{
         padding:"40px 6vw",
+        display:"flex",
+        flexWrap:"wrap",
+        justifyContent:"center"
     }
 }
 
@@ -280,15 +283,7 @@ function Home({classes}) {
     
             </Section>
             <section className={classes.experince}>
-                <div className="circle small">
-                    <h2>
-                        100+ Hours
-                    </h2>
-                    <p>
-                        Softxsill Training
-                    </p>
-             
-                </div>
+                
                 <div className="circle small">
                 <h2>
                         100+ Hours

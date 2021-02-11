@@ -8,7 +8,8 @@ const styles = {
         height:"66px",
         position:"fixed",
         top:"0",
-        overflow:"hidden"
+        overflow:"hidden",
+       
     },
     navbar:{
         height:"100%",
