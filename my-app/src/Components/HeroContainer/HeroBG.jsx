@@ -1,6 +1,8 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core'
 import classNames from 'classnames'
+import Zoom from 'react-reveal/Zoom';
+
 import {
     useScrollSection,
     
@@ -24,20 +26,24 @@ const styles = {
     },
     hero__h1:{
         color:"var(--white)",
-        fontSize:"34px"
+        fontSize:"34px",
+        margin:"0 0 20px "
     },
     hero__bg__content:{
         width:"60%",
         zIndex:"10",
         padding:"30vh 6vh",
+      
         left:"5vw",
         "@media (max-width:780px)":{
             width:"100%",
+            padding:"10vh 6vh",
         }
     },
     text_developer:{
         color:"var(--white)",
-        fontSize:"25px"
+        fontSize:"25px",
+        margin:" 0 0 20px"
     },
     btn_container:{
         display:"flex",
@@ -95,9 +101,10 @@ function HeroBG({classes}) {
     return (
         <>
         <section className={classes.hero__bg__container}>
+            <Zoom>
             <div className={classes.hero__bg__content}>
                 <h1 className={classes.hero__h1}>
-                   Deleveloping Web applications is not a my job but my passion  
+                   Developing Web applications is not  my job but my passion  
                 </h1>
                 <div className={classes.text_developer}>
                     Fullstack Developer from Bangalore, India
@@ -118,6 +125,7 @@ function HeroBG({classes}) {
                     </button>
                 </div>
             </div>
+            </Zoom>
         </section>
        
         </>
