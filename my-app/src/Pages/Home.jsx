@@ -211,7 +211,9 @@ const styles = {
         "@media (max-width:780px)":{
            flexDirection:"column",
             "& button":{
-                margin:"15px"
+                margin:"15px",
+                display:"flex",
+                justifyContent:"center"
             }
         }
     }
