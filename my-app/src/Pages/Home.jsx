@@ -425,7 +425,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button  onClick={()=>goTo("https://friendly-kilby-a210cb.netlify.app/#/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                           
                                                 <button onClick={()=>goTo("https://github.com/MahenParameshwar/GitHub-Jobs-Api-Project")} className={ classes.menuButton} >Code</button>
                                             
@@ -477,7 +477,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://60291480f649913ebd3a1168--uicolorsreact.netlify.app/#/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/flatuicolors-clone")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
@@ -524,7 +524,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/Instagram-Clone-React")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/Instagram-Clone-React")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
@@ -572,7 +572,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/Instagram-Clone-React")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/IndeedReactClone")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
@@ -613,7 +613,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://5fc4e3542e549644fc4023d4--designoclone.netlify.app/index.html")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/Designo")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
@@ -650,7 +650,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://dreamy-bose-0b18d8.netlify.app/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/Stone-Paper-Sisscor-Challenge")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
@@ -685,7 +685,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://vigilant-perlman-68822b.netlify.app/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/MarvelSearch")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
@@ -719,7 +719,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://fresh-menu.netlify.app/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/freshmenu-clone")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
