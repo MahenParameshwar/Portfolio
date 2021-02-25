@@ -141,7 +141,7 @@ function Navbar({classes}) {
             <nav  className= {classes.navbar}>
                 <div className={classes.container}>
                     <div >
-                        <img  src="/images/logo.jpg" alt=""/>
+                        <img  src="https://i.ibb.co/TYM9SsR/logo.jpg" alt=""/>
                     </div>
                         <div className={classes.menuContainer__lg}>
                             <div className={classNames(classes.menuContainer__lg__menu,classes.flex)}>

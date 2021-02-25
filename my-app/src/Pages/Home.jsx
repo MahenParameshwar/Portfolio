@@ -246,11 +246,13 @@ function Home({classes}) {
                         Hi I am Mahen and I have a passion to develop slick and robust web applications.
                         I am a hard working individual who loves to solve problems.
                         I firmly belive in delignt practice.
-                        I love reading comics, playing video games and watching videos of space and wildlife
+                        I love reading comics, playing video games and watching videos of space and wildlife.
                     </p>
                     <img src="/images/avatar.svg" alt=""/>
                 </div>
-                <button className={ classNames(classes.menuButton,classes.green,classes.resumeBtn)}>View Resume</button>
+                
+                <button onClick={()=>goTo("https://drive.google.com/drive/folders/1C0lFlNx7KUfrLmSAiAUXYoD5GJzWFvWZ")} className={ classNames(classes.menuButton,classes.green,classes.resumeBtn)}>View Resume</button>
+               
             </Section>
             </Fade>
             <Fade left>
@@ -283,7 +285,7 @@ function Home({classes}) {
                     <p>
                     Below you can find a wide variety of projects.
                     For these you can check out both the code and a live version of the project. 
-                    If you're interested in my work you're welcome to check out the other public repositories on my GitHub profile
+                    If you're interested in my work you're welcome to check out the other public repositories on my GitHub profile.
                     </p>
                 </Fade>
        
@@ -291,7 +293,7 @@ function Home({classes}) {
                     <div className={classes.project__card__container}>
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
-                                <img  src="/images/netflix.png" alt="netflix" />
+                                <img  src="https://i.ibb.co/HCnvf78/netflix.png" alt="netflix" />
                             </div>
                         
                             <div className={classes.project__card__content}>
@@ -300,7 +302,7 @@ function Home({classes}) {
                                         This is a clone of the world's biggest ott platform.
                                         The user can view a wide variety of movies and tv shows.
                                         The appliction was built within four days with a team of four
-                                        .The tech stacks used were React for the frontend, Redux for state management at the client side. Node and Express were used for the Backend Integration and Mongo Db was used to persist the data
+                                        .The tech stacks used were React for the frontend, Redux for state management at the client side. Node and Express were used for the Backend Integration and Mongo Db was used to persist the data.
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -342,7 +344,7 @@ function Home({classes}) {
 
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
-                                <img  src="/images/amazon.png" alt="netflix" />
+                                <img  src="https://i.ibb.co/d6bn7z4/amazon.png" alt="netflix" />
                             </div>
                         
                             <div className={classes.project__card__content}>
@@ -351,7 +353,7 @@ function Home({classes}) {
                                         This is a clone of the world's biggest e-commerse paltform.
                                         The user can view a wide variety of products and add them to their cart.
                                         The appliction was built individually within 1 week and was my first MERN stack application  
-                                        .The tech stacks used were React for the frontend, Redux for state management at the client side. Node and Express were used for the Backend Integration and Mongo Db was used to persist the data
+                                        .The tech stacks used were React for the frontend, Redux for state management at the client side. Node and Express were used for the Backend Integration and Mongo Db was used to persist the data.
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -393,7 +395,7 @@ function Home({classes}) {
 
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
-                                <img  src="/images/githubjobs.png" alt="netflix" />
+                                <img  src="https://i.ibb.co/1sQN1S7/github.png" alt="netflix" />
                             </div>
                         
                             <div className={classes.project__card__content}>
@@ -402,7 +404,7 @@ function Home({classes}) {
                                         This project was inspired by a challenge at Frontend mentors.More info in the git repository
                                         The user can search jobs based on location and job type and will be redirected to an other page 
                                         where he can view further description obout the job The user can also pick between a light theme and a dark theme.
-                                        The tech stacks used were react fro the front end and the styling was done using styled-components and antdesign
+                                        The tech stacks used were react fro the front end and the styling was done using styled-components and antdesign.
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -437,7 +439,7 @@ function Home({classes}) {
 
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
-                                <img  src="/images/flatuicolors.png" alt="flatuicolors" />
+                                <img  src="https://i.ibb.co/fFkxgZ7/flatuicolors.png" alt="flatuicolors" />
                             </div>
                         
                             <div className={classes.project__card__content}>
@@ -448,7 +450,7 @@ function Home({classes}) {
                                        They can delete the palete and the colors in the palete also.
                                        They can genreate 10 shades of on color and can change the luminosity.
                                        They can copy the rgb, rgba or hex code of a color
-                                       The project took me 2 weeks to build and was a individual project
+                                       The project took me 2 weeks to build and was a individual project.
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -476,7 +478,7 @@ function Home({classes}) {
                                         </div>
                                         <div>
                                             <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
-                                            <button className={ classes.menuButton}>Code</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/flatuicolors-clone")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
                                     
@@ -486,18 +488,16 @@ function Home({classes}) {
 
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
-                                <img  src="/images/instagram.png" alt="flatuicolors" />
+                                <img  src="https://i.ibb.co/9GcNB8S/instagram.png" alt="flatuicolors" />
                             </div>
                         
                             <div className={classes.project__card__content}>
                                     <h2>Instagram</h2>
                                     <p>
-                                       The application allows users to create their own palette of colors
-                                       They have a limit of 20 colors and can give the palette a unique name.
-                                       They can delete the palete and the colors in the palete also.
-                                       They can genreate 10 shades of on color and can change the luminosity.
-                                       They can copy the rgb, rgba or hex code of a color
-                                       The project took me 2 weeks to build and was a individual project
+                                       The application allows users to add photos and comment on the photos
+                                       The user can like and save posts in addition to which he can follow different users
+                                       The project took 3 days to build with a team of 3
+                                       The tech stacks used were react for the front end and a mock server to perform the backend operations persist the data.
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -525,7 +525,7 @@ function Home({classes}) {
                                         </div>
                                         <div>
                                             <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
-                                            <button className={ classes.menuButton}>Code</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/Instagram-Clone-React")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
                                     
@@ -534,18 +534,18 @@ function Home({classes}) {
 
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
-                                <img  src="/images/indeed.png" alt="flatuicolors" />
+                                <img  src="https://i.ibb.co/YTKQD2s/indeed.png" alt="flatuicolors" />
                             </div>
                         
                             <div className={classes.project__card__content}>
                                     <h2>Indeed</h2>
                                     <p>
-                                       The application allows users to create their own palette of colors
-                                       They have a limit of 20 colors and can give the palette a unique name.
-                                       They can delete the palete and the colors in the palete also.
-                                       They can genreate 10 shades of on color and can change the luminosity.
-                                       They can copy the rgb, rgba or hex code of a color
-                                       The project took me 2 weeks to build and was a individual project
+                                        Indeed is an American worldwide employment website for job listings 
+                                        The user can view jobs based on type and location.The user can filter and sort the jobs
+                                        and can also post jobs and can apply and save jobs.
+                                        The project was built within 3 days with a team of three.
+                                        The tech stacks used were React for the frontend, Redux for state management at the client side and
+                                        a mock server to perform the backend operations persist the data
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -573,7 +573,7 @@ function Home({classes}) {
                                         </div>
                                         <div>
                                             <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
-                                            <button className={ classes.menuButton}>Code</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/IndeedReactClone")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
                                     
@@ -583,18 +583,16 @@ function Home({classes}) {
                     
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
-                                <img  src="/images/designo.png" alt="flatuicolors" />
+                                <img  src="https://i.ibb.co/Wxjnk8j/designo.png" alt="flatuicolors" />
                             </div>
                         
                             <div className={classes.project__card__content}>
                                     <h2>Designo</h2>
                                     <p>
-                                       The application allows users to create their own palette of colors
-                                       They have a limit of 20 colors and can give the palette a unique name.
-                                       They can delete the palete and the colors in the palete also.
-                                       They can genreate 10 shades of on color and can change the luminosity.
-                                       They can copy the rgb, rgba or hex code of a color
-                                       The project took me 2 weeks to build and was a individual project
+                                      This is a clone of a fictional web site template provided FrontEnd mentors.
+                                      The project was built in one week individaully and the tech stacks used were
+                                      html,css,scss and javascript
+
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -616,7 +614,7 @@ function Home({classes}) {
                                         </div>
                                         <div>
                                             <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
-                                            <button className={ classes.menuButton}>Code</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/Designo")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
                                     
@@ -625,18 +623,15 @@ function Home({classes}) {
 
                         <div  className={classes.project__card}>
                             <div  className={classes.img__container}>
-                                <img  src="/images/sps.png" alt="flatuicolors" />
+                                <img  src="https://i.ibb.co/bQ5QvSw/sps.png" alt="flatuicolors" />
                             </div>
                         
                             <div className={classes.project__card__content}>
                                     <h2>Stone Paper Sissors</h2>
                                     <p>
-                                       The application allows users to create their own palette of colors
-                                       They have a limit of 20 colors and can give the palette a unique name.
-                                       They can delete the palete and the colors in the palete also.
-                                       They can genreate 10 shades of on color and can change the luminosity.
-                                       They can copy the rgb, rgba or hex code of a color
-                                       The project took me 2 weeks to build and was a individual project
+                                       The application allow users to play a game of stone paper and scissors
+                                       with the computer on the web.The project was built individually within one day
+                                       and the tech stacks used were html,css and javascript
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -656,7 +651,7 @@ function Home({classes}) {
                                         </div>
                                         <div>
                                             <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
-                                            <button className={ classes.menuButton}>Code</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/Stone-Paper-Sisscor-Challenge")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
                                     
@@ -665,18 +660,14 @@ function Home({classes}) {
 
                         <div  className={classes.project__card}>
                             <div  className={classes.img__container}>
-                                <img  src="/images/marvel.png" alt="flatuicolors" />
+                                <img  src="https://i.ibb.co/D1qdWVT/marvel.png" alt="flatuicolors" />
                             </div>
                         
                             <div className={classes.project__card__content}>
                                     <h2>Marvel Search</h2>
                                     <p>
-                                       The application allows users to create their own palette of colors
-                                       They have a limit of 20 colors and can give the palette a unique name.
-                                       They can delete the palete and the colors in the palete also.
-                                       They can genreate 10 shades of on color and can change the luminosity.
-                                       They can copy the rgb, rgba or hex code of a color
-                                       The project took me 2 weeks to build and was a individual project
+                                        The aplication allows users to search any marvel charactor and the comics they appear in.
+                                         The tech stacks used were html,css and javascript and the api used to fetch the data was provided by https://developer.marvel.com/
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -695,7 +686,7 @@ function Home({classes}) {
                                         </div>
                                         <div>
                                             <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
-                                            <button className={ classes.menuButton}>Code</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/MarvelSearch")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
                                     
@@ -704,18 +695,13 @@ function Home({classes}) {
 
                         <div  className={classes.project__card}>
                             <div  className={classes.img__container}>
-                                <img  src="/images/FreshMenu.png" alt="flatuicolors" />
+                                <img  src="https://i.ibb.co/56MrjY0/freshmenu.png" alt="flatuicolors" />
                             </div>
                         
                             <div className={classes.project__card__content}>
                                     <h2>FreshMenu</h2>
                                     <p>
-                                       The application allows users to create their own palette of colors
-                                       They have a limit of 20 colors and can give the palette a unique name.
-                                       They can delete the palete and the colors in the palete also.
-                                       They can genreate 10 shades of on color and can change the luminosity.
-                                       They can copy the rgb, rgba or hex code of a color
-                                       The project took me 2 weeks to build and was a individual project
+                                    Freshmenu is a online food ordering website with a wide variety of delicious cuisines This was my very first project built and the duration of this project was 3 days. The tech stacks used were html,css and javascript
                                     </p>
                                     <div className={classes.project__tech__info}>
                                         <h3>Technologies Used</h3>
@@ -734,7 +720,7 @@ function Home({classes}) {
                                         </div>
                                         <div>
                                             <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
-                                            <button className={ classes.menuButton}>Code</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/freshmenu-clone")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
                                     
@@ -788,7 +774,7 @@ function Home({classes}) {
             </Fade>
 
             <section className={classes.commits}>
-                <iframe scrolling="yes" height="340px" title="Contributions" width="100%" src="images/contributions.png" frameBorder="0"></iframe>
+                <iframe scrolling="yes" height="340px" title="Contributions" width="100%" src="https://i.ibb.co/4MbW9Cj/contributions.png" frameBorder="0"></iframe>
             </section>
            <Section id="contact" className={classes.contactMe}>
                 <h2>
