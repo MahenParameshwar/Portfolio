@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MahenParameshwar/Portfolio/static/css/main.51d18254.chunk.css",
+    "main.js": "/MahenParameshwar/Portfolio/static/js/main.a82b9d1e.chunk.js",
+    "main.js.map": "/MahenParameshwar/Portfolio/static/js/main.a82b9d1e.chunk.js.map",
+    "runtime-main.js": "/MahenParameshwar/Portfolio/static/js/runtime-main.87ace257.js",
+    "runtime-main.js.map": "/MahenParameshwar/Portfolio/static/js/runtime-main.87ace257.js.map",
+    "static/js/2.f8501f79.chunk.js": "/MahenParameshwar/Portfolio/static/js/2.f8501f79.chunk.js",
+    "static/js/2.f8501f79.chunk.js.map": "/MahenParameshwar/Portfolio/static/js/2.f8501f79.chunk.js.map",
+    "static/js/3.547baf94.chunk.js": "/MahenParameshwar/Portfolio/static/js/3.547baf94.chunk.js",
+    "static/js/3.547baf94.chunk.js.map": "/MahenParameshwar/Portfolio/static/js/3.547baf94.chunk.js.map",
+    "index.html": "/MahenParameshwar/Portfolio/index.html",
+    "static/css/main.51d18254.chunk.css.map": "/MahenParameshwar/Portfolio/static/css/main.51d18254.chunk.css.map",
+    "static/js/2.f8501f79.chunk.js.LICENSE.txt": "/MahenParameshwar/Portfolio/static/js/2.f8501f79.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/MahenParameshwar/Portfolio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87ace257.js",
+    "static/js/2.f8501f79.chunk.js",
+    "static/css/main.51d18254.chunk.css",
+    "static/js/main.a82b9d1e.chunk.js"
+  ]
+}
