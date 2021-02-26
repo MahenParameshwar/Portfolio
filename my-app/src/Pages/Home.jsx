@@ -248,7 +248,7 @@ function Home({classes}) {
                         I firmly belive in delignt practice.
                         I love reading comics, playing video games and watching videos of space and wildlife.
                     </p>
-                    <img src="/images/avatar.svg" alt=""/>
+                    <img src="" alt=""/>
                 </div>
                 
                 <button onClick={()=>goTo("https://drive.google.com/drive/folders/1C0lFlNx7KUfrLmSAiAUXYoD5GJzWFvWZ")} className={ classNames(classes.menuButton,classes.green,classes.resumeBtn)}>View Resume</button>
@@ -331,7 +331,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://masai-netflix.netlify.app/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                            
                                                 <button onClick={()=>goTo("https://github.com/lsriniwas/Netflix-Clone")} className={ classes.menuButton} >Code</button>
                                           
