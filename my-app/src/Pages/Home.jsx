@@ -773,6 +773,40 @@ function Home({classes}) {
                             </div>   
                         </div>
 
+                        <div  className={classes.project__card}>
+                            <div  className={classes.img__container}>
+                                <img  src="https://i.ibb.co/jJqdGBG/expense-manger.png" alt="flatuicolors" />
+                            </div>
+                        
+                            <div className={classes.project__card__content}>
+                                    <h2>Expense Manager</h2>
+                                    <p>
+                                        The application is used to keep track of your daily expenses .The duration of this project was 2 days and was built with a team of two The tech stacks used were html,css and javascript
+                                    </p>
+                                    <div className={classes.project__tech__info}>
+                                        <h3>Technologies Used</h3>
+                                        <div className={classes.project__tech__tools}>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <div>
+                                            <button onClick={()=>goTo("https://expensemanagerjs.netlify.app/login.html")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://github.com/MahenParameshwar/ExpenceManager")} className={ classes.menuButton}>Code</button>
+                                        </div>
+                                    </div>
+                                    
+                            </div>   
+                        </div>
+
                         </StackGrid>
                         
                     {/* </div> */}
