@@ -5,6 +5,8 @@ import HeroBG from '../Components/HeroContainer/HeroBG';
 import classNames from 'classnames'
 import Fade from 'react-reveal/Fade';
 import {Link} from 'react-router-dom'
+import StackGrid from "react-stack-grid";
+
 import {
     ScrollingProvider,
    
@@ -97,11 +99,11 @@ const styles = {
        
     },
     project__card__container:{
-        display:"grid",
+       
         color:"black",
         textAlign:"left",
-        gridTemplateColumns:"1fr 1fr 1fr",
-        gridGap:"2vw",
+       
+       
         borderTopLeftRadius:"10px",
         borderTopRightRadius:"10px",
         "& img":{
@@ -109,14 +111,7 @@ const styles = {
             borderTopRightRadius: "10px",
             width:"100%"
         },
-        "@media (max-width:1020px)":{
-            gridTemplateColumns:"1fr 1fr",
-            
-        },
-        "@media (max-width:780px)":{
-            gridTemplateColumns:"1fr",
-            
-        }
+       
     },
 
     techImgContainer:{
@@ -248,7 +243,7 @@ function Home({classes}) {
                         I firmly belive in delignt practice.
                         I love reading comics, playing video games and watching videos of space and wildlife.
                     </p>
-                    <img src="" alt=""/>
+                    <img src="https://www.pngjoy.com/pngl/804/9537968_avatar-web-developer-coder-avatar-hd-png-download.png" alt=""/>
                 </div>
                 
                 <button onClick={()=>goTo("https://drive.google.com/drive/folders/1C0lFlNx7KUfrLmSAiAUXYoD5GJzWFvWZ")} className={ classNames(classes.menuButton,classes.green,classes.resumeBtn)}>View Resume</button>
@@ -289,15 +284,66 @@ function Home({classes}) {
                     </p>
                 </Fade>
        
-        
-                    <div className={classes.project__card__container}>
+                <StackGrid gutterWidth={20} gutterHeight={40}   className={classes.project__card__container} columnWidth={430}>
+                    {/* <div className={classes.project__card__container}> */}
+                    <div className={classes.project__card}>
+                            <div className={classes.img__container}>
+                                <img  src="https://i.ibb.co/zhvc86H/screencapture-twitter-clone-netlify-netlify-app-2021-03-01-20-52-55.png" alt="netflix" />
+                            </div>
+                        
+                            <div className={classes.project__card__content}>
+                                    <h2>Twitter MERN</h2>
+                                    <p>
+                                        This is a clone of the worltd's biggest social networking webiste
+                                        The user can tweet, foollow other users, view their profiles and can do much more.
+                                        The appliction was built within 1 month individually.
+                                        .The tech stacks used were React for the frontend, Redux for state management at the client side. Node and Express were used for the Backend Integration and Mongo Db was used to persist the data.
+                                    </p>
+                                    <div className={classes.project__tech__info}>
+                                        <h3>Technologies Used</h3>
+                                        <div className={classes.project__tech__tools}>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40"  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://e7.pngegg.com/pngimages/301/171/png-clipart-node-js-javascript-software-developer-computer-icons-angularjs-others-miscellaneous-text-thumbnail.png" />
+                                            </div>
+                                            <div>
+                                                <img alt = "tech-pic" height="40" src="https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png" />
+                                            </div>
+                                            
+                                        </div>
+                                        <div>
+                                            <button onClick={()=>goTo("https://twitter-clone-netlify.netlify.app/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                           
+                                                <button onClick={()=>goTo("https://github.com/MahenParameshwar/TwitterCloneMERN")} className={ classes.menuButton} >Code</button>
+                                          
+                                        </div>
+                                       
+                                    </div>
+                                    
+                            </div>
+                        </div>
+
                         <div className={classes.project__card}>
                             <div className={classes.img__container}>
                                 <img  src="https://i.ibb.co/HCnvf78/netflix.png" alt="netflix" />
                             </div>
                         
                             <div className={classes.project__card__content}>
-                                    <h2>Netflix</h2>
+                                    <h2>Netflix MERN</h2>
                                     <p>
                                         This is a clone of the world's biggest ott platform.
                                         The user can view a wide variety of movies and tv shows.
@@ -348,7 +394,7 @@ function Home({classes}) {
                             </div>
                         
                             <div className={classes.project__card__content}>
-                                    <h2>Amazon</h2>
+                                    <h2>Amazon MERN</h2>
                                     <p>
                                         This is a clone of the world's biggest e-commerse paltform.
                                         The user can view a wide variety of products and add them to their cart.
@@ -382,7 +428,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo(" https://clone-mern-amazon.netlify.app")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             
                                                 <button onClick={()=>goTo("https://github.com/MahenParameshwar/Amazon-Clone-React")} className={ classes.menuButton} >Code</button>
                                           
@@ -477,7 +523,7 @@ function Home({classes}) {
                                             
                                         </div>
                                         <div>
-                                            <button onClick={()=>goTo("https://60291480f649913ebd3a1168--uicolorsreact.netlify.app/#/")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
+                                            <button onClick={()=>goTo("https://uicolorsreact.netlify.app")} className={ classNames(classes.menuButton,classes.green)}>Live Version</button>
                                             <button onClick={()=>goTo("https://github.com/MahenParameshwar/flatuicolors-clone")} className={ classes.menuButton}>Code</button>
                                         </div>
                                     </div>
@@ -726,8 +772,10 @@ function Home({classes}) {
                                     
                             </div>   
                         </div>
+
+                        </StackGrid>
                         
-                    </div>
+                    {/* </div> */}
 
          
            
@@ -764,7 +812,7 @@ function Home({classes}) {
                     </div>
                     <div className="circle small">
                         <h2>
-                            550+ 
+                            600+ 
                         </h2>
                         <p>
                         Git Commits
@@ -774,7 +822,7 @@ function Home({classes}) {
             </Fade>
 
             <section className={classes.commits}>
-                <iframe scrolling="yes" height="340px" title="Contributions" width="100%" src="https://i.ibb.co/4MbW9Cj/contributions.png" frameBorder="0"></iframe>
+                <iframe scrolling="yes" height="340px" title="Contributions" width="100%" src="https://i.ibb.co/qrsb2nT/git-contributions.png" frameBorder="0"></iframe>
             </section>
            <Section id="contact" className={classes.contactMe}>
                 <h2>
