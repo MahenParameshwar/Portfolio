@@ -110,7 +110,7 @@ function HeroBG({classes}) {
                    Developing Web applications is not  my job but my passion  
                 </h1>
                 <div className={classes.text_developer}>
-                    Fullstack Developer from Bangalore, India
+                    Fullstack Developer from Bengaluru, India
                 </div>
                 <div className={classes.btn_container}>
                     <button onClick={projectsSection.onClick} selected={projectsSection.selected} className={classNames(classes.menuButton,classes.green) }>

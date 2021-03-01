@@ -28,6 +28,7 @@ const styles = {
         textAlign:"center"
         
     },
+   
     p__img__container:{
         display:"flex",
         alignItems:"center",
@@ -53,6 +54,7 @@ const styles = {
         color:"var(--white)",
         borderBottomLeftRadius: "1000% 1000px",
         borderBottomRightRadius: "1000% 1000px",
+       
 
         "& h2":{
             fontSize:"28px"
@@ -100,10 +102,11 @@ const styles = {
     },
     project__card__container:{
        
+        display:"grid",
         color:"black",
         textAlign:"left",
-       
-       
+        gridTemplateColumns:"1fr 1fr 1fr",
+        gridGap:"2vw",
         borderTopLeftRadius:"10px",
         borderTopRightRadius:"10px",
         "& img":{
@@ -111,6 +114,14 @@ const styles = {
             borderTopRightRadius: "10px",
             width:"100%"
         },
+        "@media (max-width:1020px)":{
+            gridTemplateColumns:"1fr 1fr",
+            
+        },
+        "@media (max-width:780px)":{
+            gridTemplateColumns:"1fr",
+            
+        }
        
     },
 
@@ -240,7 +251,7 @@ function Home({classes}) {
                     <p>
                         Hi I am Mahen and I have a passion to develop slick and robust web applications.
                         I am a hard working individual who loves to solve problems.
-                        I firmly belive in delignt practice.
+                        I firmly belive in diligent practice.
                         I love reading comics, playing video games and watching videos of space and wildlife.
                     </p>
                     <img src="https://www.pngjoy.com/pngl/804/9537968_avatar-web-developer-coder-avatar-hd-png-download.png" alt=""/>
@@ -284,8 +295,8 @@ function Home({classes}) {
                     </p>
                 </Fade>
        
-                <StackGrid gutterWidth={20} gutterHeight={30}   className={classes.project__card__container} columnWidth={400}>
-                    {/* <div className={classes.project__card__container}> */}
+                
+                    <div className={classes.project__card__container}>
                     <div className={classes.project__card}>
                             <div className={classes.img__container}>
                                 <img  src="https://i.ibb.co/zhvc86H/screencapture-twitter-clone-netlify-netlify-app-2021-03-01-20-52-55.png" alt="netflix" />
@@ -494,7 +505,7 @@ function Home({classes}) {
                                        The application allows users to create their own palette of colors
                                        They have a limit of 20 colors and can give the palette a unique name.
                                        They can delete the palete and the colors in the palete also.
-                                       They can genreate 10 shades of on color and can change the luminosity.
+                                       They can genreate 10 shades of a single color and can change the luminosity.
                                        They can copy the rgb, rgba or hex code of a color
                                        The project took me 2 weeks to build and was a individual project.
                                     </p>
@@ -807,9 +818,8 @@ function Home({classes}) {
                             </div>   
                         </div>
 
-                        </StackGrid>
-                        
-                    {/* </div> */}
+                       
+                    </div>
 
          
            
