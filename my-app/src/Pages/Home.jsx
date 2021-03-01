@@ -284,7 +284,7 @@ function Home({classes}) {
                     </p>
                 </Fade>
        
-                <StackGrid gutterWidth={20} gutterHeight={40}   className={classes.project__card__container} columnWidth={430}>
+                <StackGrid gutterWidth={20} gutterHeight={30}   className={classes.project__card__container} columnWidth={400}>
                     {/* <div className={classes.project__card__container}> */}
                     <div className={classes.project__card}>
                             <div className={classes.img__container}>
